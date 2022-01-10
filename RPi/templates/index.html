@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Major+Mono+Display&family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+
+    <title>Smart Coffee</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/switch.css">
+
+</head>
+
+<body>
+    <div class="center">
+        <div>
+            <div class="header">
+                <div class="reference">
+                    <a href="https://github.com/SigurdVilstrup">Github</a> | Sigurd Vilstrup | <a href="mailto:sigurd.vilstrup@gmail.com">Contact</a></div>
+                <div class="logo-text">スマートコーヒー</div>
+                <div class="logo-subtext">Smart Coffee</div>
+                <div class="logo-subsubtext">Alarm & Remote Controlled Coffee</div>
+            </div>
+
+            <div class="alarm">
+                <div class="alarm-title">
+                    Alarm
+                </div>
+                <label class="switch" onclick="location.href='/alarm/toggle';">
+                    <input type="checkbox" {{ alarm_on }}>
+                    <span class="slider round"></span>
+                  </label>
+                <div>
+
+                    <div class="wake-time">Wake Up Time:</div>
+                    <div class="clock">
+                        <input id=hour class="time hour" value="{{ time_hour }}">{{ hour }}</input>
+                        <div style="width: min-content;">:</div>
+                        <input id=minute class="time minute" value="{{ time_minute }}"></input>
+                    </div>
+                    <div class="set-time">
+                        <button class="togglebutton-small" onclick="location.href='/time/'+document.getElementById('hour').value+'-'+document.getElementById('minute').value;">
+                            Set Time
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toggle-buttons">
+                <button class="togglebutton on" onclick="location.href='/cmnd/on'">
+                    Start Coffee Machine
+                </button>
+                <button class="togglebutton off" onclick="location.href='/cmnd/off'">
+                    Stop Coffee Machine
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+
+.reference {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.logo-text {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+}
+
+.logo-subtext {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.logo-subsubtext {
+    margin-top: 8px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.alarm-title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.header {
+    margin: 8px;
+}
+
+.alarm {
+    margin-top: 64px;
+}
+
+.wake-time {
+    text-align: center;
+    margin-top: 32px;
+    font-size: 2rem;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: "Major Mono Display", monospace;
+    font-size: 4rem;
+    align-content: center;
+}
+
+.time {
+    font-family: "Major Mono Display", monospace;
+    width: 6rem;
+    height: 4.5rem;
+    font-size: 4rem;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.time:focus {
+    outline: none;
+}
+
+.toggle-buttons {
+    margin-top: 64px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.togglebutton {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 2rem;
+    border-radius: 2rem;
+    padding: 8px 32px 8px 32px;
+    line-height: 3rem;
+    text-align: center;
+    border: none;
+    margin: 16px;
+    background-color: rgb(221, 221, 221);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.togglebutton:hover {
+    background-color: rgb(243, 243, 243);
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.247);
+}
+
+.togglebutton:active {
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.363);
+}
+
+.togglebutton-small {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.5rem;
+    align-self: center;
+    border-radius: 2rem;
+    padding: 4px 16px 4px 16px;
+    line-height: 2.5rem;
+    text-align: center;
+    border: none;
+    margin: 8px;
+    background-color: rgb(177, 177, 177);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.togglebutton-small:hover {
+    background-color: rgb(206, 206, 206);
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.247);
+}
+
+.togglebutton-small:active {
+    background-color: rgb(230, 230, 230);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.363);
+}
+
+.set-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
