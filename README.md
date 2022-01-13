@@ -2,8 +2,8 @@
 Alarm & Remote Controlled Coffee automation
 
 ## Todo
-- ~~Local server
-- ~~UI
+- ~~Local server~~
+- ~~UI~~
 - Local Environment
 - Https
 - Error handling
