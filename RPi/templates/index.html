@@ -19,8 +19,7 @@
             <div class="header">
                 <div class="reference">
                     <a href="https://github.com/SigurdVilstrup">Github</a> | Sigurd Vilstrup | <a href="mailto:sigurd.vilstrup@gmail.com">Contact</a></div>
-                <div class="logo-text">スマートコーヒー</div>
-                <div class="logo-subtext">Smart Coffee</div>
+                <div class="logo-text">Smart Coffee</div>
                 <div class="logo-subsubtext">Alarm & Remote Controlled Coffee</div>
             </div>
 
@@ -28,20 +27,20 @@
                 <div class="alarm-title">
                     Alarm
                 </div>
-                <label class="switch" onclick="location.href='/alarm/toggle';">
-                    <input type="checkbox" {{ alarm_on }}>
+                <label class="switch">
+                    <input id="checkbox" onclick="location.href='/alarm/'+document.getElementById('checkbox').checked;" type="checkbox" {{ alarm_on }}>
                     <span class="slider round"></span>
                   </label>
                 <div>
 
                     <div class="wake-time">Wake Up Time:</div>
                     <div class="clock">
-                        <input id=hour class="time hour" value="{{ time_hour }}">{{ hour }}</input>
+                        <input id=hour class="time hour" value="{{ time_hour }}" type="text" maxlength="2"></input>
                         <div style="width: min-content;">:</div>
-                        <input id=minute class="time minute" value="{{ time_minute }}"></input>
+                        <input id=minute class="time minute" value="{{ time_minute }}" type="text" maxlength="2"></input>
                     </div>
                     <div class="set-time">
-                        <button class="togglebutton-small" onclick="location.href='/time/'+document.getElementById('hour').value+'-'+document.getElementById('minute').value;">
+                        <button id="time_button" class="togglebutton-small" onclick="setTime()">
                             Set Time
                         </button>
                     </div>
@@ -61,7 +60,7 @@
 
     </div>
 
-
+    <script src="../static/script.js"></script>
 </body>
 
 </html>
